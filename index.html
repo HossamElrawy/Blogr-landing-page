@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>[Blogr]</title>
+
+</head>
+<body>
+  <header>
+    <img src="images/bg-pattern-intro-desktop.svg" class="bg-desktop" alt="">
+    <div class="mobile-bg-con">
+      <img src="images/bg-pattern-intro-mobile.svg" class="bg-mobile" alt="">
+    </div>
+    <div class="logo-nav-div">
+      <img src="images/logo.svg" class="logo" alt="">
+      <button class="ham-icon js-ham-icon">
+        <img src="images/icon-hamburger.svg" class="js-ham-img" alt="">
+        <img src="images/icon-close.svg" class="js-close-img hide" alt="">
+      </button>
+      <div class="nav-bar js-nav-bar">
+        <div class="nav-bar-left">
+          <div class="relatively">
+            <button class="drop-down-button js-product">
+              <p>
+                Product
+              </p>
+              <img src="images/icon-arrow-light.svg" class="light-arrow js-arrow-product" alt="">
+              <img src="images/icon-arrow-dark.svg" class="dark-arrow js-dark-arrow-product" alt="">
+            </button>
+            <div class="drop-down-nav js-nav-product">
+              <p>
+                Overview
+              </p>
+              <p>
+                Pricing
+              </p>
+              <p>
+                Marketplace
+              </p>
+              <p>
+                Features
+              </p>
+              <p>
+                Integrations 
+              </p>
+            </div>
+          </div>
+          <div class="relatively">
+            <button class="drop-down-button js-company">
+              <p>
+                Company
+              </p>
+              <img src="images/icon-arrow-light.svg" class="light-arrow js-arrow-company" alt="">
+              <img src="images/icon-arrow-dark.svg" class="dark-arrow js-dark-arrow-company" alt="">
+            </button>
+            <div class="drop-down-nav js-nav-company">
+              <p>
+                About
+              </p>
+              <p>
+                Team
+              </p>
+              <p>
+                Blog
+              </p>
+              <p>
+                Careers
+              </p>
+            </div>
+          </div>
+          <div class="relatively">
+            <button class="drop-down-button js-connect">
+              <p>
+                Connect
+              </p>
+              <img src="images/icon-arrow-light.svg" class="light-arrow js-arrow-connect" alt="">
+              <img src="images/icon-arrow-dark.svg" class="dark-arrow js-dark-arrow-connect" alt="">
+            </button>
+            <div class="drop-down-nav js-nav-connect">
+              <p>
+                Contact
+              </p>
+              <p>
+                Newsletter
+              </p>
+              <p>
+                LinkedIn
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="kogin-bar">
+          <button class="login-button">
+            Login
+          </button>
+          <button class="sign-up-button">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <p class="headline">
+      A modern publishing platform
+    </p>
+    <p class="punch">
+      Grow your audience and build your online brand
+    </p>
+    <div class="start-div">
+      <button class="start">
+        Start for Free
+      </button>
+      <button class="learn">
+        Learn More
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="first-div">
+      <p class="head-line">
+        Designed for the future
+      </p>
+      <img src="images/illustration-editor-desktop.svg" class="first-circle" alt="">
+      <img src="images/illustration-editor-mobile.svg" class="first-mobile" alt="">
+      <div class="left-section">
+        <div class="sections">
+          <p class="sec-head">
+            Introducing an extensible editor
+          </p>
+          <p class="sec-exp">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
+        </div>
+        <div class="sections">
+          <p class="sec-head">
+            Robust content management
+          </p>
+          <p class="sec-exp">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-div">
+      <div class="bg-circle">
+        <img src="images/bg-pattern-circles.svg" class="bg-inside-circle" alt="">
+      </div>
+      <img src="images/illustration-phones.svg" class="mobile-illus" alt="">
+      <div class="second-exp-div">
+        <p class="second-head">
+          State of the Art Infrastructure
+        </p>
+        <p class="second-exp">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </div>
+
+    <div class="third-div">
+      <img src="images/illustration-laptop-desktop.svg" class="labtop" alt="">
+      <img src="images/illustration-laptop-mobile.svg" class="labtop-mobile" alt="">
+      <div class="third-section">
+        <div class="sections">
+          <p class="sec-head">
+            Free, open, simple
+          </p>
+          <p class="sec-exp">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+        </div>
+        <div class="sections">
+          <p class="sec-head">
+            Powerful tooling
+          </p>
+          <p class="sec-exp">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+
+  <footer>
+    <img src="images/logo.svg" alt="">
+    <div class="nav-gab">
+      <p class="nav-head">
+        Product
+      </p>
+      <span>
+        Overview
+      </span>
+      <span>
+        Pricing
+      </span>
+      <span>
+        Marketplace
+      </span>
+      <span>
+        Features
+      </span>
+      <span>
+        Integrations
+      </span>
+    </div>
+    <div class="nav-gab">
+      <p class="nav-head">
+        Company
+      </p>
+      <span>
+        About
+      </span>
+      <span>
+        Team
+      </span>
+      <span>
+        Blog
+      </span>
+      <span>
+        Careers
+      </span>
+    </div>
+    <div class="nav-gab">
+      <p class="nav-head">
+        Connect
+      </p>
+      <span>
+        Contact
+      </span>
+      <span>
+        Newsletter
+      </span>      
+      <span>
+        LinkedIn
+      </span>
+    </div>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,539 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%) );
+    border-bottom-left-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.bg-desktop {
+    position: absolute;
+    top: -1342px;
+    left: -439px;
+    z-index: 0;
+}
+.logo-nav-div {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 101px 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 59px 161px 110px;
+    width: 100%;
+    z-index: 10;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-down-nav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    color: hsl(240, 10%, 16%);
+    background-color: white;
+    padding: 32px 24px;
+    gap: 16px;
+    font-size: 14px;
+    z-index: 10;
+    border-radius: 5px;
+    top: 42px;
+    width: 168px;
+    left: -24px;
+}
+.drop-down-nav p {
+    cursor: pointer;
+    transition: font-weight 0.3s ease;
+}
+.drop-down-nav p:hover {
+    font-weight: 700;
+}
+.show{
+    display : flex;
+}
+.nav-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.relatively {
+    position: relative;
+}
+.drop-down-button,
+.login-button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    color: hsl(0, 100%, 100%);
+    cursor: pointer;
+    transition: text-decoration 0.3s ease, font-weight 0.3s ease;
+}
+.drop-down-button:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.clicked {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.arrow-up {
+  transform: rotate(180deg);
+}
+.kogin-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.sign-up-button,
+.start,
+.learn {
+    width: 137px;
+    height: 48px;   
+    font-family: "Ubuntu";
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(356, 100%, 66%);
+    cursor: pointer;
+}
+.sign-up-button,
+.start {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.sign-up-button:hover,
+.start:hover {
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(356, 89%, 76%);
+}
+.headline {
+    z-index: 1;
+    font-family: "Overpass";
+    font-weight: 600;
+    color: hsl(0, 100%, 100%);
+    font-size: 59px;
+}
+.punch {
+    z-index: 1;
+    font-family: "Overpass";
+    margin-bottom: 21px;
+    width: fit-content;
+    color: hsl(0, 100%, 100%);
+    font-size: 20px;
+    font-weight: 300;
+}
+.start-div {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.learn {
+    background-color: transparent;
+    border: 1px solid hsl(0, 100%, 100%);
+    color: hsl(0, 100%, 100%);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.learn:hover {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+main {
+    height: 2435px;
+}
+.first-div {
+    height: 961px;
+    position: relative;
+    overflow: hidden;
+    padding: 160px 160px 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+}
+.first-circle {
+    position: absolute;
+    top: 70px;
+    right: -275px;
+    z-index: -1;
+}
+.head-line {
+    font-family: "Overpass";
+    color: hsl(208, 49%, 24%);
+    font-weight: 600;
+    text-align: center;
+    font-size: 36px;
+}
+.left-section {
+    padding-right: 585px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sec-head {
+    font-family: "Overpass";
+    color: hsl(208, 49%, 24%);
+    font-weight: 600;
+    font-size: 27.5px;
+}
+.sec-exp {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    line-height: 28px;
+    color: hsl(207, 13%, 34%);
+}
+.second-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 0 176px 0 125px;
+    gap: 60px;
+    align-items: center;
+}
+.bg-circle {
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-color: hsl(237, 17%, 21%);
+    border-top-right-radius: 96px;
+    border-bottom-left-radius: 96px;
+}
+.bg-inside-circle {
+    position: absolute;
+    top: -509px;
+    left: -215px;
+}
+.second-exp-div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.second-head {
+    font-family: "Overpass";
+    font-weight: 600;
+    color: hsl(0, 100%, 100%);
+    font-size: 36px;
+}
+.second-exp {
+    width: fit-content;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    color: hsl(0, 100%, 100%);
+    line-height: 28px;
+}
+.third-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.labtop {
+    margin-left: -279px;
+}
+.third-section {
+    display: flex;
+    padding: 0 176px 0 40px;
+    flex-direction: column;
+    gap: 80px;
+}
+footer {
+    height: 359px;
+    border-top-right-radius: 96px;
+    background-color: hsl(237, 17%, 21%);
+    padding: 69px 140px 74px 160px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.nav-gab {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu";
+    gap: 16px;
+    color: hsl(0, 100%, 100%);
+    font-weight: 400;
+    min-width: 285px;
+}
+.nav-head {
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.nav-gab span {
+    transition: text-decoration 0.3s ease;
+    cursor: pointer;
+    width: fit-content;
+}
+.nav-gab span:hover {
+    text-decoration: underline;
+}
+.bg-mobile {
+    display: none;
+}
+.ham-icon{
+    display: none;
+}
+.first-mobile,
+.labtop-mobile,
+.hide,
+.dark-arrow,
+.mobile-bg-con {
+    display: none;
+}
+@media (max-width : 800px) {
+    header {
+        gap: 20px;   
+        overflow: visible; 
+    }
+    .bg-desktop {
+        display: none;
+    }
+    .mobile-bg-con {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-bottom-left-radius: 90px;
+        position: absolute;
+    }
+    .bg-mobile {
+        display: flex;
+        position: absolute;
+        top: -240px;
+        right: -630px;
+    }
+    .logo {
+        width: 82px;
+    }
+    .logo-nav-div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 56px 24px 112px;
+    }
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 125px;
+        background-color: hsl(0, 100%, 100%);
+        flex-direction: column;
+        left: 27px;
+        right: 27px;
+        padding: 32px 24px;
+        border-radius: 4px;
+        z-index: 1000;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    .headline {
+        text-align: center;
+        font-size: 32px;
+        width: 290px;
+    }
+    .punch {
+        margin-bottom: 24px;
+        font-size: 18px;
+        width: 280px;
+        text-align: center;
+    }
+    .ham-icon{
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .start,
+    .learn { 
+        font-size: 16px;
+    }
+    .start-div {
+        gap: 8px;
+    }
+    main {
+        height: auto;
+    }
+    .first-div {
+        height: auto;
+        padding: 106px 0 80px;
+        gap: 48px;
+    }
+    .first-circle {
+        display: none;
+    }
+    .first-mobile {
+        display: flex;
+        width: 100%;
+    }
+    .head-line {
+        font-size: 25.5px;
+    }
+    .left-section {
+        margin-top: 5px;
+        padding-right: 24px;
+        padding-left: 24px;
+        gap: 51px;
+    }
+    .sections {
+        gap: 27px;
+    }
+    .sec-head {
+        font-size: 27px;
+        text-align: center;
+    }
+    .sec-exp {
+        text-align: center;
+    }
+    .second-div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+        gap: 48px;
+    }
+    .bg-circle {
+        top: 180px;
+        height: 625px;
+    }
+    .mobile-illus {
+        width: 100%;
+        margin-top: 32px;
+    }
+    .bg-inside-circle {
+        width: 585px;
+        left: -112px;
+        top: auto;
+        bottom: 258px;
+    }
+    .second-exp-div {
+        gap: 32px;
+    }
+    .second-head {
+        text-align: center;
+    }
+    .second-exp {
+        text-align: center;
+    }
+    .third-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 160px;
+    }
+    .labtop {
+        display: none;
+    }
+    .labtop-mobile {
+        display: flex;
+        width: 100%;
+    }
+    .third-section {
+        padding: 0 27px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        gap: 50px;
+    }
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 75px 0 81px;
+        align-items: center;
+        gap: 48px;
+    }
+    .nav-gab {
+        min-width: auto;
+        gap: 8px;
+        align-items: center;
+    }
+    .hide {
+        display: none;
+    }
+    .nav-bar-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid hsla(206, 13%, 34%, 0.3);
+        width: 100%;
+    }
+    .drop-down-button,
+    .login-button {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        font-family: "Ubuntu";
+        font-weight: 500;
+        color: hsl(237, 23%, 31%);
+        cursor: pointer;
+        transition: text-decoration 0.3s ease, font-weight 0.3s ease;
+        font-size: 18px;
+    }
+    .dark-arrow {
+        display: flex;
+    }
+    .light-arrow {
+        display: none;
+    }
+    .relatively {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .drop-down-nav {
+        display: none;
+        position: static;
+        color: hsl(208, 49%, 24%);
+        align-items: center;
+        background-color: hsla(206, 13%, 34%, 0.1);
+        padding: 24px 0;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 24px;
+    }
+    .kogin-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 36px;
+    }
+
+    .sign-up-button {
+        background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: white;
+    }
+    .sign-up-button,
+    .start {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .sign-up-button:hover,
+    .start:hover {
+        color: hsl(0, 100%, 100%);
+        background-color: hsl(356, 89%, 76%);
+    }
+    .show{
+        display : flex;
+    }
+}
